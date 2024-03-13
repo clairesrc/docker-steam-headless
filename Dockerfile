@@ -4,7 +4,7 @@
 #   image base once SteamOS 3 is released (pending review)
 #
 FROM archlinux:latest
-LABEL maintainer="Josh.5 <jsunnex@gmail.com>"
+LABEL maintainer="Claire R <hi@claire.zone>"
 
 # Update package repos
 RUN \
@@ -90,7 +90,7 @@ ENV \
     USER="default" \
     USER_PASSWORD="password" \
     USER_HOME="/home/default" \
-    TZ="Pacific/Auckland" \
+    TZ="America/Chicago" \
     USER_LOCALES="en_US.UTF-8 UTF-8"
 RUN \
     echo "**** Configure default user '${USER}' ****" \
